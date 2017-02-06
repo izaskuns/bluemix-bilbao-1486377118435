@@ -1,0 +1,12 @@
+applications:
+- path: target/JavaHelloWorldApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: bluemix-bilbao
+  host: bluemix-bilbao
+  disk_quota: 1024M
+  services:
+  - availability-monitoring-auto
+  - Auto-Scaling-4z
+  - Cloudant NoSQL DB-a3-bmx
